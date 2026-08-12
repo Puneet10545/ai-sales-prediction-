@@ -12,7 +12,7 @@ st.set_page_config(
     layout="wide"
 )
 
-df = pd.read_csv("dataset/sales_data.csv")
+df = pd.read_csv("sales_data.csv")
 
 df["date"] = pd.to_datetime(df["date"])
 df["day"] = df["date"].dt.day
